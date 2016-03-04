@@ -1,0 +1,34 @@
+---
+layout: subject
+---
+<!-- Banner -->		
+<section id="banner">
+
+    <div class="inner">
+
+        <header>
+            <h2>Chemistry</h2>
+        </header>
+
+    </div>
+
+</section>
+
+<div class="page-content">
+    <!-- -->
+    <article id="main">
+    
+        <!-- Get all posts. -->
+        <section class="wrapper style4 container">
+            <ul class="posts">
+              {% for post in site.categories.chemistry %}
+                    {% include subject-post.html %}
+              {% endfor %}
+            </ul>
+        </section>
+
+    </article>
+</div>
+
+
+
